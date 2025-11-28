@@ -38,7 +38,7 @@ import {  Head } from '@inertiajs/vue3';
                         name="name"
                         placeholder="Full name"
                     />
-                    <InputError :message="errors.name" />
+                    
                 </div>
 
                 <div class="grid gap-2">

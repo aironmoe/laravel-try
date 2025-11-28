@@ -10,8 +10,7 @@ import AuthBase from '@/layouts/AuthLayout.vue';
 import { register } from '@/routes';
 import { store } from '@/routes/login';
 import { request } from '@/routes/password';
-import { Forms, Head } from '@inertiajs/vue3';
-
+import { Form, Head } from '@inertiajs/vue3';
 
 defineProps<{
     status?: string;
@@ -53,7 +52,7 @@ defineProps<{
                         autocomplete="email"
                         placeholder="email@example.com"
                     />
-                    
+                    <InputError :message="errors.email" />
                 </div>
 
                 <div class="grid gap-2">
