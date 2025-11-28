@@ -8,7 +8,8 @@ import { Spinner } from '@/components/ui/spinner';
 import AuthBase from '@/layouts/AuthLayout.vue';
 import { login } from '@/routes';
 import { store } from '@/routes/register';
-import { Form, Head } from '@inertiajs/vue3';
+const form = store.form();
+import {  Head } from '@inertiajs/vue3';
 </script>
 
 <template>
